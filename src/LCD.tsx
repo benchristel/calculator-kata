@@ -32,7 +32,7 @@ export type CalculatorLCDProps = {
 export function CalculatorLCD(props: CalculatorLCDProps) {
   return (
     <LCD>
-      <EMinusM e={props.e} m={props.m} minus={props.minus} />
+      <MMinusE e={props.e} m={props.m} minus={props.minus} />
       {props.digits.map(SevenSegment)}
     </LCD>
   )
@@ -75,7 +75,7 @@ export function SevenSegment(props: SevenSegmentProps) {
   )
 }
 
-export function EMinusM(props: {
+export function MMinusE(props: {
   e: boolean
   minus: boolean
   m: boolean
