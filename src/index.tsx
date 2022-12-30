@@ -1,4 +1,4 @@
-import {render} from "preact"
+import {h, render} from "preact"
 import {App} from "./App"
 import "./test-results"
 import "./reset.css"

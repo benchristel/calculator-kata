@@ -1,11 +1,60 @@
+import {h, Fragment} from "preact"
 import "./app.css"
+import {segmentsForDigit} from "./digits"
+import {CalculatorLCD} from "./LCD"
 
 export function App() {
-  return <h1>Hello from Preact!</h1>
+  return (
+    <>
+      <CalculatorLCD
+        e={false}
+        m={true}
+        minus={true}
+        digits={[
+          segmentsForDigit(" "),
+          segmentsForDigit("1"),
+          segmentsForDigit("2"),
+          segmentsForDigit("3"),
+          segmentsForDigit("4"),
+          segmentsForDigit("5"),
+          segmentsForDigit("6"),
+          segmentsForDigit("7"),
+        ]}
+      />
+      <Spacer height="9px" />
+      <div class="ButtonGrid">
+        <button style={gridPos("1", "1 / 3")}>ON/C</button>
+        <button style={gridPos("5", "4 / 6")}>+</button>
+        <button>MRC</button>
+        <button>M-</button>
+        <button>M+</button>
+        <button>÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>×</button>
+        <button>√</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>%</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+/-</button>
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+      </div>
+    </>
+  )
 }
 
-test("App", {
-  "renders a greeting"() {
-    expect(App().props.children, equals, "Hello from Preact!")
-  },
-})
+function Spacer(props: {height: string}) {
+  return <div style={props} />
+}
+
+function gridPos(column: string, row: string) {
+  return {gridRow: row, gridColumn: column}
+}

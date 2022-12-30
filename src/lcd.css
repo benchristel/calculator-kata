@@ -1,0 +1,13 @@
+.LCD {
+  position: relative;
+  border: 1px solid #888;
+  border-top-color: #222;
+  border-bottom-color: #ccc;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: inset 0 1px 6px #0008;
+  background: #f0f8e4;
+  line-height: 0;
+  display: table;
+  white-space: nowrap;
+}
