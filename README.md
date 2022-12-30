@@ -29,7 +29,7 @@ Here are some things to think about while doing the exercise:
 
 ### Guide to Files
 
-The file `src/App.tsx` contains a mockup of the UI, with none of the functionality implemented.
+The file `src/App.tsx` contains a mockup of the UI, with none of the functionality implemented. The `src/lib` folder contains files you shouldn't need to change.
 
 ### Server and Typechecker
 
