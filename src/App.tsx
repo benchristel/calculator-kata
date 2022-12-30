@@ -2,6 +2,12 @@ import {h, Fragment} from "preact"
 import "./app.css"
 import {CalculatorLCD} from "./lib/LCD"
 
+test("the test framework", {
+  "runs a trivial test"() {
+    expect(true, equals, true)
+  },
+})
+
 export function App() {
   return (
     <>
