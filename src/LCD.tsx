@@ -1,5 +1,5 @@
 import {h, ComponentChildren} from "preact"
-import {Position} from "./Position"
+import {Position} from "./lib/Position"
 import "./lcd.css"
 
 export type SevenSegmentProps = {
