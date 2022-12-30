@@ -1,6 +1,6 @@
 import {h, Fragment} from "preact"
 import "./app.css"
-import {CalculatorLCD} from "./LCD"
+import {CalculatorLCD} from "./lib/LCD"
 
 export function App() {
   return (
