@@ -2,7 +2,7 @@ import {h, ComponentChildren} from "preact"
 import {Position} from "./Position"
 import "./lcd.css"
 
-export type SevenSegmentViewModel = {
+export type SevenSegmentProps = {
   top: boolean
   upperLeft: boolean
   upperRight: boolean
@@ -18,14 +18,14 @@ export type CalculatorLCDProps = {
   minus: boolean
   m: boolean
   digits: [
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
-    SevenSegmentViewModel,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
+    SevenSegmentProps,
   ]
 }
 
@@ -38,7 +38,7 @@ export function CalculatorLCD(props: CalculatorLCDProps) {
   )
 }
 
-export function SevenSegment(props: SevenSegmentViewModel) {
+export function SevenSegment(props: SevenSegmentProps) {
   const style = {
     width: "60px",
     height: "83px",

@@ -1,6 +1,6 @@
 import {h} from "preact"
 import {unreachable} from "./lib/unreachable"
-import {SevenSegment, SevenSegmentViewModel} from "./LCD"
+import {SevenSegment, SevenSegmentProps} from "./LCD"
 
 export type LCDDigit =
   | " "
@@ -33,7 +33,7 @@ export function DigitView(props: DigitProps) {
   return <SevenSegment {...segmentsForDigit(props.digit)} />
 }
 
-export function segmentsForDigit(d: LCDDigit): SevenSegmentViewModel {
+export function segmentsForDigit(d: LCDDigit): SevenSegmentProps {
   switch (d) {
     case " ":
       return blank
@@ -183,6 +183,6 @@ const zero = {
   bottom: true,
 }
 
-function dot(segments: SevenSegmentViewModel): SevenSegmentViewModel {
+function dot(segments: SevenSegmentProps): SevenSegmentProps {
   return {...segments, decimalPoint: true}
 }
