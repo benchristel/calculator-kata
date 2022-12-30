@@ -1,6 +1,5 @@
 import {h, Fragment} from "preact"
 import "./app.css"
-import {segmentsForDigit} from "./digits"
 import {CalculatorLCD} from "./LCD"
 
 export function App() {
@@ -8,17 +7,89 @@ export function App() {
     <>
       <CalculatorLCD
         e={false}
-        m={true}
-        minus={true}
+        m={false}
+        minus={false}
         digits={[
-          segmentsForDigit(" "),
-          segmentsForDigit("1"),
-          segmentsForDigit("2"),
-          segmentsForDigit("3"),
-          segmentsForDigit("4"),
-          segmentsForDigit("5"),
-          segmentsForDigit("6"),
-          segmentsForDigit("7"),
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
+          {
+            top: false,
+            upperLeft: false,
+            upperRight: false,
+            middle: false,
+            lowerLeft: false,
+            lowerRight: false,
+            bottom: false,
+            decimalPoint: false,
+          },
         ]}
       />
       <Spacer height="9px" />
