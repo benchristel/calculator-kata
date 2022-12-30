@@ -12,9 +12,9 @@ of course, the product manager would field these questions.
 
 Here are some things to think about while doing the exercise:
 
-- How can I test the calculator logic without invoking the UI code or sensing the state of the LCD segments?
-- How can I make my test assertions easier to read, and more obviously correct?
+- How might you make your tests easier to read, and more obviously correct?
 - What's the best way to hook up the calculator logic to the UI?
+- Are the interfaces that are driven out by your tests easy to use in production? If not, what can you do about it?
 
 ## Getting Started
 
