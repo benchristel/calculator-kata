@@ -1,6 +1,7 @@
 import {h, Fragment} from "preact"
 import "./app.css"
 import {CalculatorLCD} from "./lib/LCD"
+import "./Calculator"
 
 test("the test framework", {
   "runs a trivial test"() {
